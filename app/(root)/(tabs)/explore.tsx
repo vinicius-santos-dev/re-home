@@ -33,7 +33,7 @@ export default function Explore() {
     params: {
       filter: params.filter!,
       query: params.query!,
-      limit: 6,
+      limit: 20,
     },
     skip: true,
   });

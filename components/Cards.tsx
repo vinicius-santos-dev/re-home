@@ -29,7 +29,7 @@ export const FeaturedCard = ({ item: {image, rating, name, address, price}, onPr
             includeFontPadding: false,
           }}
         >
-          {rating}
+          {rating.toFixed(1)}
         </Text>
       </View>
 
@@ -69,7 +69,7 @@ export const Card = ({ item: {image, rating, name, address, price}, onPress }: P
             includeFontPadding: false,
           }}
         >
-          {rating}
+          {rating.toFixed(1)}
         </Text>
       </View>
 
