@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# Re:Home 🏠
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern real estate app built with Expo React Native and Appwrite. Utilizing the power of Expo's cross-platform development tools and Appwrite's backend services to deliver an intuitive interface for property search and filtering.
 
-## Get started
+<img src="https://github.com/user-attachments/assets/4b4fcb11-eb0a-4459-aef4-cb8a8036a1d6" alt="Re:Home - Sign in" width="500">
+<img src="https://github.com/user-attachments/assets/9c11d517-d164-473f-b492-9a6538e66d57" alt="Re:Home - Home" width="500">
+<img src="https://github.com/user-attachments/assets/c3ba1bf8-6b96-4e1f-8379-f5317b51451b" alt="Re:Home - Explore" width="500">
+<img src="https://github.com/user-attachments/assets/119ca78f-8bbd-4403-b653-d40e684a95f6" alt="Re:Home - Profile" width="500">
 
-1. Install dependencies
+## ✨ Key Features
+- 🏘️ Property listing and search
+- 👤 Google OAuth authentication
+- 📱 Cross-platform (iOS/Android)
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technical Stack
 
-2. Start the app
+### Core
+- Expo
+- React Native
+- Appwrite (Database & Authentication, OAuth Integration)
+- TypeScript
 
-   ```bash
-    npx expo start
-   ```
+### UI & Styling
+- TailwindCSS (NativeWind)
 
-In the output, you'll find options to open the app in a
+## 📫 Contact
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vinicius-santos-dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-470FA3?style=for-the-badge&logo=About.me&logoColor=white)](https://www.viniciussantos.dev)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5511984375850)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vinicius.ssantos.dev@gmail.com)
