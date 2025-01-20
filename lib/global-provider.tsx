@@ -1,5 +1,5 @@
-import { createContext, ReactNode, useContext } from "react";
 import { useAppwrite } from "@/lib/useAppwrite";
+import { createContext, ReactNode, useContext } from "react";
 import { getCurrentUser } from "./appwrite";
 
 interface GlobalContextType {

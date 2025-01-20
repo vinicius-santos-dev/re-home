@@ -1,21 +1,21 @@
+import Comment from "@/components/Comment";
+import { facilities } from "@/constants/data";
+import icons from "@/constants/icons";
+import images from "@/constants/images";
+import { getPropertyById } from "@/lib/appwrite";
+import { useAppwrite } from "@/lib/useAppwrite";
+import { router, useLocalSearchParams } from "expo-router";
+import React from "react";
 import {
-  View,
-  Text,
   Dimensions,
-  ScrollView,
+  FlatList,
   Image,
   Platform,
+  ScrollView,
+  Text,
   TouchableOpacity,
-  FlatList,
+  View,
 } from "react-native";
-import React from "react";
-import { router, useLocalSearchParams } from "expo-router";
-import { useAppwrite } from "@/lib/useAppwrite";
-import { getPropertyById } from "@/lib/appwrite";
-import images from "@/constants/images";
-import icons from "@/constants/icons";
-import { facilities } from "@/constants/data";
-import Comment from "@/components/Comment";
 
 const Property = () => {
   const { id } = useLocalSearchParams<{ id?: string }>();
@@ -47,7 +47,7 @@ const Property = () => {
 
           <View
             className="z-50 absolute inset-x-7"
-            style={{ top: Platform.OS === "ios" ? 70 : 20 }}
+            style={{ top: Platform.OS === "ios" ? 70 : 50 }}
           >
             <View className="flex flex-row items-center w-full justify-between">
               <TouchableOpacity
