@@ -1,19 +1,18 @@
-import {
-  View,
-  Text,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-  ImageSourcePropType,
-  Alert,
-} from "react-native";
-import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
-import icons from "@/constants/icons";
-import images from "@/constants/images";
 import { settings } from "@/constants/data";
-import { useGlobalContext } from "@/lib/global-provider";
+import icons from "@/constants/icons";
 import { logout } from "@/lib/appwrite";
+import { useGlobalContext } from "@/lib/global-provider";
+import React from "react";
+import {
+  Alert,
+  Image,
+  ImageSourcePropType,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 interface SettingsItemProps {
   icon: ImageSourcePropType;
@@ -45,6 +44,13 @@ const SettingsItem = ({
   </TouchableOpacity>
 );
 
+/**
+ * Profile Screen
+ * 
+ * User profile management screen that displays:
+ * - User information from Appwrite account
+ * - Logout functionality
+ */
 const Profile = () => {
   const { user, refetch } = useGlobalContext();
 

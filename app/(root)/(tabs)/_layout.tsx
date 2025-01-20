@@ -1,7 +1,7 @@
-import { View, Text, Image, Pressable } from "react-native";
-import React from "react";
-import { Tabs } from "expo-router";
 import icons from "@/constants/icons";
+import { Tabs } from "expo-router";
+import React from "react";
+import { Image, Pressable, Text, View } from "react-native";
 
 const TabIcon = ({
   focused,
@@ -32,6 +32,14 @@ const TabIcon = ({
   </View>
 );
 
+/**
+ * Tab Navigation Layout
+ * 
+ * Configures the bottom tab navigation for the main app screens:
+ * - Home
+ * - Explore
+ * - Profile
+ */
 const TabsLayout = () => {
   return (
     <Tabs

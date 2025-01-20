@@ -1,7 +1,14 @@
-import { View, Text, Image } from "react-native";
-import React from "react";
 import images from "@/constants/images";
+import React from "react";
+import { Image, Text, View } from "react-native";
 
+/**
+ * NoResults Component
+ * 
+ * A reusable component that displays a "no results found" message
+ * with a custom illustration. Used across the application when
+ * search queries or filters return empty results.
+ */
 const NoResults = () => {
   return (
     <View className="flex items-center my-5">

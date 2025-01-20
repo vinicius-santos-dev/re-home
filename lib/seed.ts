@@ -1,5 +1,19 @@
+/**
+ * Seed Database
+ * 
+ * This file handles database seeding operations for the ReHome application.
+ * 
+ * It populates the database with initial data for:
+ * 
+ * - Properties
+ * - Agents
+ * - Galleries
+ * - Reviews
+ *
+ */
+
 import { ID } from "react-native-appwrite";
-import { databases, config } from "./appwrite";
+import { config, databases } from "./appwrite";
 import {
   agentImages,
   galleryImages,

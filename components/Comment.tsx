@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { Image, Text, View } from "react-native";
 
 import icons from "@/constants/icons";
 import { Models } from "react-native-appwrite";
@@ -7,6 +7,18 @@ interface Props {
   item: Models.Document;
 }
 
+/**
+ * Comment Component
+ *
+ * Displays individual property reviews/comments with user information
+ * and interaction elements.
+ *
+ * Features:
+ * - User avatar and name display
+ * - Review content
+ * - Like counter
+ * - Creation date
+ */
 const Comment = ({ item }: Props) => {
   return (
     <View className="flex flex-col items-start">

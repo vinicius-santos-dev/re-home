@@ -9,6 +9,22 @@ import {
   Query,
 } from "react-native-appwrite";
 
+/**
+ * Appwrite Integration
+ * 
+ * Handles all Appwrite-related configurations and API interactions for the Re:Home application.
+ * 
+ * It provides authentication, database operations, and user management functionality.
+ * 
+ * Key Features:
+ * - Client configuration and initialization
+ * - OAuth2 authentication with Google
+ * - Session management (login/logout)
+ * - User profile management
+ * - Property listing and filtering
+ * - Database operations for properties, galleries, and reviews
+ */
+
 export const config = {
   platform: "com.viniciussantosdev.re-home",
   endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,

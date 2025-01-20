@@ -5,6 +5,14 @@ import { useEffect } from "react";
 import { StatusBar } from "react-native";
 import "./global.css";
 
+/**
+ * Root Layout Component
+ * 
+ * Serves as the application's root layout, managing:
+ * - Global state through GlobalProvider
+ * - Navigation stack configuration
+ * - Font loading and styling
+ */
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     "Rubik-Bold": require("../assets/fonts/Rubik-Bold.ttf"),

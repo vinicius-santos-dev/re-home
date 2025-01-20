@@ -1,20 +1,38 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-  Alert,
-} from "react-native";
-import React from "react";
-import images from "@/constants/images";
 import icons from "@/constants/icons";
+import images from "@/constants/images";
 import { login } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import { Redirect } from "expo-router";
+import React from "react";
+import {
+  Alert,
+  Image,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
+/**
+ * SignIn Screen
+ * 
+ * Authentication screen that handles Google OAuth2 login flow.
+ * Provides user onboarding and authentication functionality.
+ * 
+ * Features:
+ * - Google OAuth2 integration
+ * - Auto-redirect when authenticated
+ * - Loading state handling
+ * - Error feedback
+ */
 const SignIn = () => {
+  /**
+   * Global Context Hooks
+   * - refetch: Refreshes authentication state
+   * - loading: Tracks authentication loading state
+   * - isLogged: Current login status
+   */
   const { refetch, loading, isLogged } = useGlobalContext();
 
   if (!loading && isLogged) return <Redirect href="/" />;

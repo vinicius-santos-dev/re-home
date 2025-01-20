@@ -18,6 +18,17 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+/**
+ * Home Screen
+ * 
+ * Main landing screen of the application displaying:
+ 
+ * - User profile summary
+ * - Search functionality
+ * - Filters for property listings
+ * - Featured properties
+ * - Property grid listing
+ */
 export default function Index() {
   const { user } = useGlobalContext();
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();

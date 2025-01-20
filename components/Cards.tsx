@@ -1,7 +1,7 @@
-import { View, Text, TouchableOpacity, Image } from "react-native";
-import React from "react";
-import images from "@/constants/images";
 import icons from "@/constants/icons";
+import images from "@/constants/images";
+import React from "react";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { Models } from "react-native-appwrite";
 
 interface Props {
@@ -9,6 +9,14 @@ interface Props {
   onPress?: () => void;
 }
 
+/**
+ * Property Card Components
+ * 
+ * This file contains two card variants for displaying property listings:
+
+ * - FeaturedCard: Prominent card with gradient overlay and rating badge
+ * - Card: Standard property card for grid layouts
+ */
 export const FeaturedCard = ({ item: {image, rating, name, address, price}, onPress }: Props) => {
   return (
     <TouchableOpacity

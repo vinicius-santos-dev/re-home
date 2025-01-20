@@ -17,6 +17,18 @@ import {
   View,
 } from "react-native";
 
+/**
+ * Property Details Screen
+ * 
+ * Dynamic route component that displays detailed information about a specific property.
+ * Uses route parameter 'id' to fetch and display property data.
+ * 
+ * Features:
+ * - Navigation header with back button
+ * - Property details (name, type, rating, agent, description, facilities, gallery)
+ * - Reviews section
+ * - Price information
+ */
 const Property = () => {
   const { id } = useLocalSearchParams<{ id?: string }>();
 

@@ -1,8 +1,14 @@
-import { View, Text, ScrollView, TouchableOpacity } from "react-native";
-import { useState } from "react";
-import { router, useLocalSearchParams } from "expo-router";
 import { categories } from "@/constants/data";
+import { router, useLocalSearchParams } from "expo-router";
+import { useState } from "react";
+import { ScrollView, Text, TouchableOpacity } from "react-native";
 
+/**
+ * Filters Component
+ *
+ * A component that provides property filtering functionality through
+ * horizontal scrollable categories.
+ */
 const Filters = () => {
   const params = useLocalSearchParams<{ filter?: string }>();
   const [selectedCategory, setSelectedCategory] = useState(

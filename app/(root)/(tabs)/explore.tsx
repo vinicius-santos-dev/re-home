@@ -17,6 +17,18 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+
+/**
+ * Explore Screen
+ * 
+ * Property search and exploration screen with advanced filtering.
+ *
+ * Features:
+ * - Property search with debounced input
+ * - Category-based filtering
+ * - Property grid display
+ * - Result count tracking
+ */
 export default function Explore() {
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
 

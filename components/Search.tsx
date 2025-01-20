@@ -1,11 +1,20 @@
-import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
-import { useState } from "react";
-import { router, useLocalSearchParams, usePathname } from "expo-router";
 import icons from "@/constants/icons";
+import { router, useLocalSearchParams } from "expo-router";
+import { useState } from "react";
+import { Image, TextInput, TouchableOpacity, View } from "react-native";
 import { useDebouncedCallback } from "use-debounce";
 
+/**
+ * Search Component
+ * 
+ * A reusable search component that provides real-time search functionality
+ * with debounced input handling to prevent excessive API calls.
+ * 
+ * Features:
+ * - Debounced search input
+ * - URL parameter synchronization
+ */
 const Search = () => {
-  const path = usePathname();
   const params = useLocalSearchParams<{ query?: string }>();
   const [search, setSearch] = useState(params.query || "");
 
