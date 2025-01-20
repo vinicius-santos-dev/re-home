@@ -2,10 +2,10 @@
 
 A modern real estate app built with Expo React Native and Appwrite. Utilizing the power of Expo's cross-platform development tools and Appwrite's backend services to deliver an intuitive interface for property search and filtering.
 
-<img src="https://github.com/user-attachments/assets/4b4fcb11-eb0a-4459-aef4-cb8a8036a1d6" alt="Re:Home - Sign in" width="500">
-<img src="https://github.com/user-attachments/assets/9c11d517-d164-473f-b492-9a6538e66d57" alt="Re:Home - Home" width="500">
-<img src="https://github.com/user-attachments/assets/c3ba1bf8-6b96-4e1f-8379-f5317b51451b" alt="Re:Home - Explore" width="500">
-<img src="https://github.com/user-attachments/assets/119ca78f-8bbd-4403-b653-d40e684a95f6" alt="Re:Home - Profile" width="500">
+<img src="https://github.com/user-attachments/assets/4b4fcb11-eb0a-4459-aef4-cb8a8036a1d6" alt="Re:Home - Sign in" width="250">
+<img src="https://github.com/user-attachments/assets/9c11d517-d164-473f-b492-9a6538e66d57" alt="Re:Home - Home" width="250">
+<img src="https://github.com/user-attachments/assets/c3ba1bf8-6b96-4e1f-8379-f5317b51451b" alt="Re:Home - Explore" width="250">
+<img src="https://github.com/user-attachments/assets/119ca78f-8bbd-4403-b653-d40e684a95f6" alt="Re:Home - Profile" width="250">
 
 ## ✨ Key Features
 - 🏘️ Property listing and search
