@@ -1,3 +1,5 @@
+import * as Linking from "expo-linking";
+import { openAuthSessionAsync } from "expo-web-browser";
 import {
   Account,
   Avatars,
@@ -6,8 +8,6 @@ import {
   OAuthProvider,
   Query,
 } from "react-native-appwrite";
-import * as Linking from "expo-linking";
-import { openAuthSessionAsync } from "expo-web-browser";
 
 export const config = {
   platform: "com.viniciussantosdev.re-home",
@@ -89,9 +89,13 @@ export async function getCurrentUser() {
 
       return { ...response, avatar: userAvatar.toString() };
     }
-  } catch (error) {
-    console.error(error);
-    return null;
+  } catch (error: any) {
+    // Silently handle guest role error
+    if (error.message?.includes('missing scope')) {
+      return null;
+    }
+    // Re-throw other errors
+    throw error;
   }
 }
 
