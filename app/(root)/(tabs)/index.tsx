@@ -3,18 +3,15 @@ import Filters from "@/components/Filters";
 import NoResults from "@/components/NoResults";
 import Search from "@/components/Search";
 import icons from "@/constants/icons";
-import images from "@/constants/images";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import { useAppwrite } from "@/lib/useAppwrite";
-import { Link, router, useLocalSearchParams } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { useEffect } from "react";
 import {
   ActivityIndicator,
-  Button,
   FlatList,
   Image,
-  ScrollView,
   Text,
   TouchableOpacity,
   View,

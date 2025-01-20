@@ -1,8 +1,9 @@
-import { SplashScreen, Stack } from "expo-router";
-import "./global.css";
-import { useFonts } from "expo-font";
-import { useEffect } from "react";
 import GlobalProvider from "@/lib/global-provider";
+import { useFonts } from "expo-font";
+import { SplashScreen, Stack } from "expo-router";
+import { useEffect } from "react";
+import { StatusBar } from "react-native";
+import "./global.css";
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -24,6 +25,7 @@ export default function RootLayout() {
 
   return (
     <GlobalProvider>
+      <StatusBar backgroundColor="white" barStyle="dark-content" translucent={true} />
       <Stack screenOptions={{ headerShown: false }} />
     </GlobalProvider>
   );
